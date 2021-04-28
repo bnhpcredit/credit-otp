@@ -1,8 +1,12 @@
 package com.example.otp.services.facade;
 
+import com.example.otp.beans.CustomerDetails;
+import com.example.otp.exception.OtpNotExistException;
+
 public interface OtpService {
 
-        String createOtp();
+        String createOtp(CustomerDetails customerDetails);
 
-		boolean validateOtp(int id);
+		boolean validateOtp(String phone, String otp) throws OtpNotExistException;
+
 }
