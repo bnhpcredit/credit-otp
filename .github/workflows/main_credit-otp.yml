@@ -49,5 +49,5 @@ jobs:
       with:
         app-name: 'credit-otp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cfda5b8246e349c48113d11a927ed7e6 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cd4ef67b45d840e5a0ec79b5d52cc996 }}
         package: '*.jar'
